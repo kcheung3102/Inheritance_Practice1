@@ -8,7 +8,7 @@ public class Software extends Product {
         this.programmer = programmer;
     }
 
-    public String getPlatform() {
+    public final String getPlatform() {
         return platform;
     }
 
@@ -16,7 +16,7 @@ public class Software extends Product {
         this.platform = platform;
     }
 
-    public String getOs() {
+    public final String getOs() {
         return os;
     }
 
@@ -29,7 +29,7 @@ public class Software extends Product {
     private String os;
 
     @Override
-    String toString() {
+    final String toString() {
         return "Programmer:         " + programmer + "\n" +
                 "Platform:          " + platform + "\n"  +
                 "OS:                " + os;

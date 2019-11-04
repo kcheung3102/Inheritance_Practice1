@@ -1,6 +1,6 @@
 public class Book extends Product {
 
-    public String getAuthor() {
+    public final String getAuthor() {
         return author;
     }
 
@@ -8,7 +8,7 @@ public class Book extends Product {
         this.author = author;
     }
 
-    public int getPages() {
+    public final int getPages() {
         return pages;
     }
 
@@ -20,7 +20,7 @@ public class Book extends Product {
     private int pages;
 
     @Override
-    String toString() {
+    final String toString() {
         return "Author:       " + author + "\n" +
                 "Pages        " + pages;
     }
