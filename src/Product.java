@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 
-public class Product {
+public abstract class Product {
 
     public String getCode() {
         return code;
@@ -45,11 +45,7 @@ public class Product {
     // Get and set accessors for the code, description, and price instance variables
 
     @Override
-    public String toString() {
-        return "Code:                " + code + "\n" +
-                "Description:        " + description + "\n" +
-                "Price:              " + this.getFormattedPrice(price) + "\n";
-    }
+    abstract String toString();
 
     private String getFormattedPrice(double price) {
         NumberFormat nf = NumberFormat.getInstance();

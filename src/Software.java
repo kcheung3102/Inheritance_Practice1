@@ -28,4 +28,11 @@ public class Software extends Product {
     private String platform; // linux, mac, or pc
     private String os;
 
+    @Override
+    String toString() {
+        return "Programmer:         " + programmer + "\n" +
+                "Platform:          " + platform + "\n"  +
+                "OS:                " + os;
+    }
+
 }
